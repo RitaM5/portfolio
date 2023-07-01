@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -11,6 +13,7 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
+      toast('Message sent Succesfully !')
   };
 
   return (
@@ -19,7 +22,7 @@ const Contact = () => {
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
+        <div className="pb-8 mt-96 lg:mt-0 text-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
@@ -54,6 +57,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };
