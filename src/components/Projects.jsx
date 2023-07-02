@@ -1,40 +1,49 @@
-import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-
+import React from 'react';
+import Card from './Card';
+import learnlingo from '../assets/learnlingo.png';
+import disney from '../assets/disney.png';
+import carrer from '../assets/carrer.png';
 const Projects = () => {
-  const portfolios = [
+ 
+  const projects = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: learnlingo,
+      details:"This is Language learning platform. It's a classes enrollment project.",
+      livesite: "https://summer-camp-client-80c4b.web.app/",
+      client: "https://github.com/RitaM5/Learn-Lingo-client",
+      server: "https://github.com/RitaM5/Learn-Lingo-server"
     },
     {
       id: 2,
-      src: reactParallax,
+      src: disney,
+      details:"This is Disney dolls online shop market single page web application.",
+      livesite: "https://disney-toys-client.web.app/",
+      client: "https://github.com/RitaM5/Disney-toys-shop-client",
+      server: "https://github.com/RitaM5/Disney-toys-shop-server"
     },
     {
       id: 3,
-      src: navbar,
+      src: carrer,
+      details:"It's a Job applied mini single page web application project",
+      livesite: "https://carrer-zone.netlify.app/",
+      client: "https://github.com/RitaM5/Carrer-Zone",
+      server: "https://github.com/RitaM5/Carrer-Zone"
     },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    
   ];
+  const seeDemo = (livesite) => {
+    window.location.href = livesite; 
+  };
+  const handleLink1Click = (client) => {
+    window.location.href = client; 
+  };
 
+  const handleLink2Click = (server) => {
+    window.location.href = server;
+  };
   return (
+    <>
     <div
       name="projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
@@ -48,26 +57,19 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
-              </div>
-            </div>
-          ))}
+          {projects.map(project => <Card
+           key={project?.id} project={project}
+           handleLink1Click={handleLink1Click}
+           handleLink2Click={handleLink2Click}
+           seeDemo={seeDemo}
+           >
+           </Card>)}
         </div>
       </div>
+
     </div>
+         
+    </>
   );
 };
 
