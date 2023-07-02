@@ -26,10 +26,10 @@ const Services = () => {
   return (
     <div
       name="services"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="my-20 lg:my-0 text-center">
+        <div className="my-10 text-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Services
           </p>
@@ -38,7 +38,7 @@ const Services = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 w-full'>
           {
             services.map((service) =>
-              <div className='shadow-md shadow-gray-600 rounded-lg p-5 space-y-4 mt-3'>
+              <div className='shadow-md shadow-gray-600 rounded-lg p-5 space-y-4 my-2'>
                 <img className='w-[60px]' src={service?.image} alt="" />
                 <h1 className='text-2xl font-semibold'>{service?.name}</h1>
                 <p>{service?.details}</p>

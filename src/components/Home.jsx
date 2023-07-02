@@ -8,10 +8,9 @@ const Home = () => {
     <>
       <div
         name="home"
-        className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-14 md:pt-40"
+        className=" w-full bg-gradient-to-b from-black via-black to-gray-800 pt-14 md:pt-40"
       >
-        {/* max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row */}
-        <div className=" container mx-auto md:px-60 px-4 flex justify-center">
+        <div className=" container mx-auto px-20  flex justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
             <div className="flex flex-col justify-center h-full mt-14 lg:mt-6 w-full">
               <h1 className="text-4xl sm:text-3xl font-bold text-white inline-flex gap-2">This is <span className="text-blue-300">Rita</span>,</h1>
@@ -30,10 +29,8 @@ const Home = () => {
                   repeat={Infinity}
                 />
               </h2>
-              <p className="text-gray-500 py-4 max-w-md">
-                I have 8 years of experience building and desgining software.
-                Currently, I love to work on web application using technologies like
-                React, Tailwind, Next JS and GraphQL.
+              <p className="text-gray-400 py-4 max-w-md">
+              MERN-Stack Web Developer with knowledge of HTML, CSS, Tailwind, ReactJs, ExpressJs, Node, MongoDB...
               </p>
 
               <div className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
@@ -53,11 +50,11 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="lg:ml-48 w-full">
+            <div className="lg:ml-52 w-full">
               <img
                 src={HeroImage}
                 alt="me"
-                style={{ borderRadius: '0 200px 200px 200px' }} className="w-[200px] mt-12 mb-6 lg:mb-0 mx-auto md:mx-0 lg:mx-0"
+                style={{ borderRadius: '0 200px 200px 200px' }} className="w-[200px] mt-10 mb-6  mx-auto md:mx-0 lg:mx-0"
               />
             </div>
           </div>
