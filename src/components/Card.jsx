@@ -1,11 +1,12 @@
 import { Fragment, useState } from 'react';
 import { Transition } from '@headlessui/react';
-const Card = ({ project, handleLink1Click, handleLink2Click, seeDemo }) => {
+import { motion } from "framer-motion"
+const Card = ({ project, i, handleLink1Click, handleLink2Click, seeDemo }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { id, src, client, server, livesite, details } = project;
     return (
         <>
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <motion.div initial={{opacity: 0, translateX: i % 2 === 0 ? -50 : 50, translateY: -50}} animate={{opacity:1, translateX:0, translateY:0}} transition={{duration:0.9, delay: i+0.2}} key={id} className="shadow-md shadow-gray-600 rounded-lg">
                 <img
                     src={src}
                     alt=""
@@ -21,7 +22,7 @@ const Card = ({ project, handleLink1Click, handleLink2Click, seeDemo }) => {
                         Code
                     </button>
                 </div>
-            </div>
+            </motion.div>
             <Transition show={isOpen} as={Fragment}>
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                     <Transition.Child

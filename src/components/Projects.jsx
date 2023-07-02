@@ -3,6 +3,7 @@ import Card from './Card';
 import learnlingo from '../assets/learnlingo.png';
 import disney from '../assets/disney.png';
 import carrer from '../assets/carrer.png';
+
 const Projects = () => {
  
   const projects = [
@@ -57,8 +58,9 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-5">
-          {projects.map(project => <Card
+          {projects.map((project, i) => <Card
            key={project?.id} project={project}
+           i={i}
            handleLink1Click={handleLink1Click}
            handleLink2Click={handleLink2Click}
            seeDemo={seeDemo}

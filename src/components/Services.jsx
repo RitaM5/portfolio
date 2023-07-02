@@ -1,7 +1,8 @@
 import React from 'react';
 import frontend from "../assets/front.png";
 import backend from "../assets/backend.png";
-import responsive from "../assets/responsive.png"
+import responsive from "../assets/responsive.png";
+import Fade from 'react-reveal/Fade';
 const Services = () => {
   const services = [
     {
@@ -38,11 +39,14 @@ const Services = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 w-full'>
           {
             services.map((service) =>
-              <div className='shadow-md shadow-gray-600 rounded-lg p-5 space-y-4 my-2'>
-                <img className='w-[60px]' src={service?.image} alt="" />
-                <h1 className='text-2xl font-semibold'>{service?.name}</h1>
-                <p>{service?.details}</p>
-              </div>
+              <Fade top duration={4000}>
+                <div className='shadow-md shadow-gray-600 rounded-lg p-5 space-y-4 my-2'>
+                  <img className='w-[60px]' src={service?.image} alt="" />
+                  <h1 className='text-2xl font-semibold'>{service?.name}</h1>
+                  <p>{service?.details}</p>
+                </div>
+              </Fade>
+
             )
           }
         </div>

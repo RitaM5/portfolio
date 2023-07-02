@@ -1,5 +1,5 @@
 import React from "react";
-
+import Fade from 'react-reveal/Fade';
 const About = () => {
   return (
     <div
@@ -12,24 +12,27 @@ const About = () => {
             About
           </p>
         </div>
-
-        <p className="text-xl mt-3">
-          I'm a passionate web designer & developer. I have pretty solid experience in frontend web development.
-          I'm expert in HTML, CSS, SASS, Bootstrap 5, Tailwind, JavaScript ES6 and React JS, Node Js, MongoDb (Always love to learn something new).
-          I really love to code & my happiness is to solve these problems with joy, in modular and reusable way so the project always remains scalable and maintainable.
-        </p>
-
+        <Fade duration={4000}>
+          <p className="text-xl mt-3">
+            I'm a passionate web designer & developer. I have pretty solid experience in frontend web development.
+            I'm expert in HTML, CSS, SASS, Bootstrap 5, Tailwind, JavaScript ES6 and React JS, Node Js, MongoDb (Always love to learn something new).
+            I really love to code & my happiness is to solve these problems with joy, in modular and reusable way so the project always remains scalable and maintainable.
+          </p>
+        </Fade>
         <br />
-
-        <p className="text-xl mb-4">
-          Motivated to learn, grow and excel in Industry.     
-        </p>
-        <p className="text-xl">
-        𝐇𝐨𝐰 𝐈'𝐦 𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐲𝐨𝐮:<br/>
-          * I can build websites with amazing UI UX<br/>
-          * I will make your website dynamic<br/>
-          * I will analyze your requirements properly
-        </p>
+        <Fade duration={4000}>
+          <p className="text-xl mb-4">
+            Motivated to learn, grow and excel in Industry.
+          </p>
+        </Fade>
+        <Fade duration={4000}>
+          <p className="text-xl">
+            𝐇𝐨𝐰 𝐈'𝐦 𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐲𝐨𝐮:<br />
+            * I can build websites with amazing UI UX<br />
+            * I will make your website dynamic<br />
+            * I will analyze your requirements properly
+          </p>
+        </Fade>
       </div>
     </div>
   );
