@@ -49,7 +49,7 @@ const Card = ({ project, i, handleLink1Click, handleLink2Click, seeDemo }) => {
                         <div className="p-6 text-blue-700">
                             <button className='font-semibold underline underline-offset-4' onClick={() => handleLink1Click(client)}>Client-Site</button>
                             <button className='ml-6 font-semibold underline underline-offset-4' onClick={() => handleLink2Click(server)}>Server-Site</button><br />
-                            <button className='mt-8 bg-red-500 text-white px-3 py-1 rounded-lg' onClick={() => setIsOpen(false)}>Close Modal</button>
+                            <button className='mt-8 bg-red-500 text-white px-3 py-1 rounded-lg' onClick={() => setIsOpen(false)}>Back Home</button>
                         </div>
                     </Transition.Child>
                 </div>
