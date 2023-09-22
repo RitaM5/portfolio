@@ -6,14 +6,16 @@ const Card = ({ project, i, handleLink1Click, handleLink2Click, seeDemo }) => {
     const { id, src, client, server, livesite, details } = project;
     return (
         <>
-            <motion.div initial={{opacity: 0, translateX: i % 2 === 0 ? -50 : 50, translateY: -50}} animate={{opacity:1, translateX:0, translateY:0}} transition={{duration:0.9, delay: i+0.2}} key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                <img
-                    src={src}
-                    alt=""
-                    className="rounded-md duration-200 hover:scale-105"
-                />
+            <motion.div initial={{ opacity: 0, translateX: i % 2 === 0 ? -50 : 50, translateY: -50 }} animate={{ opacity: 1, translateX: 0, translateY: 0 }} transition={{ duration: 0.9, delay: i + 0.2 }} key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                <figure className=''>
+                    <img
+                        src={src}
+                        alt=""
+                        className="rounded-md duration-200 lg:h-[160px] hover:scale-105"
+                    />
+                </figure>
                 <p className='my-5 px-2'># {details}</p>
-                <hr className='mt-5'/>
+                <hr className='mt-5' />
                 <div className="flex items-center justify-center">
                     <button onClick={() => seeDemo(livesite)} className="w-1/2 font-semibold px-6 py-3 m-4 duration-200 hover:scale-105">
                         Demo

@@ -3,7 +3,11 @@ import Card from './Card';
 import learnlingo from '../assets/learnlingo.png';
 import disney from '../assets/disney.png';
 import carrer from '../assets/carrer.png';
-
+import zuko from '../assets/zuko.png';
+import niche from '../assets/niche.png';
+import netflix from '../assets/netflix.png';
+import tekone from '../assets/tekone.png';
+import agrios from "../assets/agrios.png"
 const Projects = () => {
  
   const projects = [
@@ -17,6 +21,14 @@ const Projects = () => {
     },
     {
       id: 2,
+      src: zuko,
+      details:"This is Photographer web site. It is a photo buying project",
+      livesite: "https://zuko-client.web.app/",
+      client: "https://github.com/RitaM5/zuko-client",
+      server: "https://github.com/RitaM5/zuko-server"
+    },
+    {
+      id: 3,
       src: disney,
       details:"This is Disney dolls online shop market single page web application.",
       livesite: "https://disney-toys-client.web.app/",
@@ -24,14 +36,46 @@ const Projects = () => {
       server: "https://github.com/RitaM5/Disney-toys-shop-server"
     },
     {
-      id: 3,
+      id: 4,
       src: carrer,
       details:"It's a Job applied mini single page web application project",
       livesite: "https://carrer-zone.netlify.app/",
       client: "https://github.com/RitaM5/Carrer-Zone",
       server: "https://github.com/RitaM5/Carrer-Zone"
     },
-    
+    {
+      id: 5,
+      src: niche,
+      details:"It's a online school responsive static home page design.",
+      livesite: "https://nichee.netlify.app/",
+      client: "https://github.com/RitaM5/Niche",
+      server: ""
+    },
+
+    {
+      id: 6,
+      src: netflix,
+      details:"It's a responsive static official movie site design.",
+      livesite: "https://netflix-official.netlify.app/",
+      client: "https://github.com/RitaM5/Netflix",
+      server: ""
+    },
+    {
+      id: 7,
+      src: tekone,
+      details:"It's a online market responsive static home page design.",
+      livesite: "https://tekones.netlify.app/",
+      client: "https://github.com/RitaM5/Tekone",
+      server: ""
+    },
+    {
+      id: 8,
+      src: agrios,
+      details:"It's a online agriculture various information static home page design.",
+      livesite: "https://agrios-agriculture.netlify.app/",
+      client: "https://github.com/RitaM5/Agrios-agriculture",
+      server: ""
+    },
   ];
   const seeDemo = (livesite) => {
     window.location.href = livesite; 

@@ -24,7 +24,7 @@ const Footer = () => {
                         <p className='text-3xl'><span className='font-extrabold'>MOST. RITA</span><span className='text-cyan-300'> MONI</span></p>
                     </Fade>
                     <Fade right duration={4000}>
-                        <p className='text-gray-400'>Copythight © All Rights Reserved.</p>
+                        <p className='text-gray-400'>Copyright © All Rights Reserved.</p>
                     </Fade>
                 </div>
             </div>
