@@ -7,7 +7,9 @@ import zuko from '../assets/zuko.png';
 import niche from '../assets/niche.png';
 import netflix from '../assets/netflix.png';
 import tekone from '../assets/tekone.png';
-import agrios from "../assets/agrios.png"
+import agrios from "../assets/agrios.png";
+import clientdash from "../assets/clientdash.png";
+import admindash from "../assets/admindash.png"
 const Projects = () => {
  
   const projects = [
@@ -22,7 +24,7 @@ const Projects = () => {
     {
       id: 2,
       src: zuko,
-      details:"This is Photographer web site. It is a photo buying project",
+      details:"This is Photographer web site. It is a photo buying project. It's made with React & Tailwind.",
       livesite: "https://zuko-client.web.app/",
       client: "https://github.com/RitaM5/zuko-client",
       server: "https://github.com/RitaM5/zuko-server"
@@ -46,7 +48,7 @@ const Projects = () => {
     {
       id: 5,
       src: niche,
-      details:"It's a online school responsive static home page design.",
+      details:"It's a online school responsive static home page design. It's made with React & Tailwind.",
       livesite: "https://nichee.netlify.app/",
       client: "https://github.com/RitaM5/Niche",
       server: ""
@@ -55,7 +57,7 @@ const Projects = () => {
     {
       id: 6,
       src: netflix,
-      details:"It's a responsive static official movie site design.",
+      details:"It's a responsive static official movie site design. It's made with React & Tailwind.",
       livesite: "https://netflix-official.netlify.app/",
       client: "https://github.com/RitaM5/Netflix",
       server: ""
@@ -63,7 +65,7 @@ const Projects = () => {
     {
       id: 7,
       src: tekone,
-      details:"It's a online market responsive static home page design.",
+      details:"It's a online market responsive static home page design. It's made with React & Tailwind.",
       livesite: "https://tekones.netlify.app/",
       client: "https://github.com/RitaM5/Tekone",
       server: ""
@@ -71,9 +73,25 @@ const Projects = () => {
     {
       id: 8,
       src: agrios,
-      details:"It's a online agriculture various information static home page design.",
+      details:"It's a online agriculture various information static home page design. It's made with React & Tailwind.",
       livesite: "https://agrios-agriculture.netlify.app/",
       client: "https://github.com/RitaM5/Agrios-agriculture",
+      server: ""
+    },
+    {
+      id: 9,
+      src: clientdash,
+      details:"It's a various information static client dashboard design. It's made with HTML, Css & Js.",
+      livesite: "https://multipurc-e-commerce-dashboard.netlify.app/",
+      client: "https://github.com/RitaM5/multipurc-clientdashboard",
+      server: ""
+    },
+    {
+      id: 10,
+      src: admindash,
+      details:"It's a various information static admin dashboard design. It's made with HTML, Css & Js.",
+      livesite: "https://active-ecommerce-admin-pannel.netlify.app/",
+      client: "https://github.com/RitaM5/multipurc-admin-dashboard",
       server: ""
     },
   ];
