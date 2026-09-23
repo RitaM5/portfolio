@@ -63,7 +63,7 @@ const NavBar = () => {
         {/* Logo */}
         <div>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bangers">
-            Rita <span className="text-cyan-300">Moni</span>
+            Rita <span className="text-cyan-300">Dev</span>
           </h1>
         </div>
 

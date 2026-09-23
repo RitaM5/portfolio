@@ -1,7 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import learnlingo from '../assets/learnlingo.png';
-import disney from '../assets/disney.png';
 import carrer from '../assets/carrer.png';
 import zuko from '../assets/zuko.png';
 import niche from '../assets/niche.png';
@@ -15,30 +13,24 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: learnlingo,
-      details:"This is Language learning platform. It's a classes enrollment project.",
-      livesite: "https://summer-camp-client-80c4b.web.app/",
-      client: "https://github.com/RitaM5/Learn-Lingo-client",
-      server: "https://github.com/RitaM5/Learn-Lingo-server"
-    },
-    {
-      id: 2,
       src: zuko,
       details:"This is Photographer web site. It is a photo buying project. It's made with React & Tailwind.",
       livesite: "https://zuko-client.web.app/",
       client: "https://github.com/RitaM5/zuko-client",
       server: "https://github.com/RitaM5/zuko-server"
     },
+    
+    {
+      id: 2,
+      src: netflix,
+      details:"It's a responsive static official movie site design. It's made with React & Tailwind.",
+      livesite: "https://genuine-scone.netlify.app/",
+      client: "https://github.com/RitaM5/Netflix",
+      server: ""
+    },
+
     {
       id: 3,
-      src: disney,
-      details:"This is Disney dolls online shop market single page web application.",
-      livesite: "https://disney-toys-client.web.app/",
-      client: "https://github.com/RitaM5/Disney-toys-shop-client",
-      server: "https://github.com/RitaM5/Disney-toys-shop-server"
-    },
-    {
-      id: 4,
       src: carrer,
       details:"It's a Job applied mini single page web application project",
       livesite: "https://carrer-zone.netlify.app/",
@@ -46,7 +38,7 @@ const Projects = () => {
       server: "https://github.com/RitaM5/Carrer-Zone"
     },
     {
-      id: 5,
+      id: 4,
       src: niche,
       details:"It's a online school responsive static home page design. It's made with React & Tailwind.",
       livesite: "https://nichee.netlify.app/",
@@ -55,15 +47,7 @@ const Projects = () => {
     },
 
     {
-      id: 6,
-      src: netflix,
-      details:"It's a responsive static official movie site design. It's made with React & Tailwind.",
-      livesite: "https://netflix-official.netlify.app/",
-      client: "https://github.com/RitaM5/Netflix",
-      server: ""
-    },
-    {
-      id: 7,
+      id: 5,
       src: tekone,
       details:"It's a online market responsive static home page design. It's made with React & Tailwind.",
       livesite: "https://tekones.netlify.app/",
@@ -71,7 +55,7 @@ const Projects = () => {
       server: ""
     },
     {
-      id: 8,
+      id: 6,
       src: agrios,
       details:"It's a online agriculture various information static home page design. It's made with React & Tailwind.",
       livesite: "https://agrios-agriculture.netlify.app/",
@@ -79,7 +63,7 @@ const Projects = () => {
       server: ""
     },
     {
-      id: 9,
+      id: 7,
       src: clientdash,
       details:"It's a various information static client dashboard design. It's made with HTML, Css & Js.",
       livesite: "https://multipurc-e-commerce-dashboard.netlify.app/",
@@ -87,7 +71,7 @@ const Projects = () => {
       server: ""
     },
     {
-      id: 10,
+      id: 8,
       src: admindash,
       details:"It's a various information static admin dashboard design. It's made with HTML, Css & Js.",
       livesite: "https://active-ecommerce-admin-pannel.netlify.app/",
